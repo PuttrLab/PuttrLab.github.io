@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 360" font-family="DM Sans, sans-serif">
+  <rect width="400" height="360" rx="8" fill="#F5F5F5"/>
+
+  <!-- Title -->
+  <text x="200" y="32" text-anchor="middle" font-size="14" font-weight="700" fill="#1B4332">Face Angle at Impact</text>
+
+  <!-- Target line -->
+  <line x1="200" y1="60" x2="200" y2="340" stroke="#D0D0D0" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="200" y="348" text-anchor="middle" font-size="10" fill="#999">Target Line</text>
+
+  <!-- Ball -->
+  <circle cx="200" cy="200" r="10" fill="#FFF" stroke="#999" stroke-width="1.5"/>
+
+  <!-- SQUARE face (center) -->
+  <g transform="translate(200, 165)">
+    <rect x="-22" y="-6" width="44" height="12" rx="2" fill="#1B4332" transform="rotate(0)"/>
+    <text x="0" y="-14" text-anchor="middle" font-size="11" font-weight="600" fill="#C5A55A">0° Square</text>
+  </g>
+
+  <!-- OPEN face (right) -->
+  <g transform="translate(310, 165)">
+    <rect x="-22" y="-6" width="44" height="12" rx="2" fill="#C5A55A" transform="rotate(15)"/>
+    <text x="0" y="-20" text-anchor="middle" font-size="11" font-weight="600" fill="#C5A55A">Open (+)</text>
+    <!-- Arrow showing direction face points -->
+    <line x1="0" y1="-6" x2="12" y2="-18" stroke="#C5A55A" stroke-width="1.2" marker-end="url(#arrowGold)"/>
+  </g>
+
+  <!-- CLOSED face (left) -->
+  <g transform="translate(90, 165)">
+    <rect x="-22" y="-6" width="44" height="12" rx="2" fill="#C5A55A" transform="rotate(-15)"/>
+    <text x="0" y="-20" text-anchor="middle" font-size="11" font-weight="600" fill="#C5A55A">Closed (−)</text>
+    <line x1="0" y1="-6" x2="-12" y2="-18" stroke="#C5A55A" stroke-width="1.2" marker-end="url(#arrowGold)"/>
+  </g>
+
+  <!-- Angle arcs -->
+  <!-- Open angle arc -->
+  <path d="M 200,100 A 30,30 0 0,1 208,100" fill="none" stroke="#C5A55A" stroke-width="1"/>
+
+  <!-- Annotations -->
+  <g transform="translate(200, 250)">
+    <rect x="-120" y="-14" width="240" height="28" rx="6" fill="#1B4332"/>
+    <text x="0" y="4" text-anchor="middle" font-size="11" font-weight="500" fill="#FFF">Tour target: within ±1° of intended line</text>
+  </g>
+
+  <!-- Good/Bad labels -->
+  <g transform="translate(200, 295)">
+    <circle cx="-60" cy="0" r="6" fill="#2D6A4F"/>
+    <text x="-48" y="4" font-size="10" fill="#555">Square = on line</text>
+    <circle cx="-60" cy="22" r="6" fill="#C5A55A"/>
+    <text x="-48" y="26" font-size="10" fill="#555">Off = missed putt</text>
+  </g>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowGold" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#C5A55A"/>
+    </marker>
+  </defs>
+</svg>

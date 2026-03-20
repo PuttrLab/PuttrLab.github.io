@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 360" font-family="DM Sans, sans-serif">
+  <rect width="400" height="360" rx="8" fill="#F5F5F5"/>
+
+  <!-- Title -->
+  <text x="200" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#1B4332">Backswing vs Forward Swing Arc</text>
+
+  <!-- ===== GOOD EXAMPLE (top) ===== -->
+  <text x="200" y="58" text-anchor="middle" font-size="12" font-weight="600" fill="#2D6A4F">Matched Arcs (Good)</text>
+
+  <!-- Target line -->
+  <line x1="200" y1="70" x2="200" y2="170" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- Ball -->
+  <circle cx="200" cy="145" r="7" fill="#FFF" stroke="#999" stroke-width="1.2"/>
+
+  <!-- Backswing arc - good (going back/up) -->
+  <path d="M 200,138 C 185,125 165,105 148,80"
+        fill="none" stroke="#1B4332" stroke-width="2.5" stroke-linecap="round"
+        marker-end="url(#arrowDark)"/>
+
+  <!-- Forward swing arc - good (matching, going forward/up) -->
+  <path d="M 200,138 C 215,125 235,105 252,80"
+        fill="none" stroke="#C5A55A" stroke-width="2.5" stroke-linecap="round"
+        marker-end="url(#arrowGoldM)"/>
+
+  <!-- Labels -->
+  <text x="120" y="76" text-anchor="middle" font-size="9" font-weight="600" fill="#1B4332">Backswing</text>
+  <text x="280" y="76" text-anchor="middle" font-size="9" font-weight="600" fill="#C5A55A">Forward</text>
+
+  <!-- Check mark -->
+  <g transform="translate(200, 172)">
+    <circle cx="0" cy="0" r="10" fill="#2D6A4F"/>
+    <path d="M -5,0 L -2,4 L 5,-4" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Divider -->
+  <line x1="60" y1="195" x2="340" y2="195" stroke="#D0D0D0" stroke-width="1"/>
+
+  <!-- ===== BAD EXAMPLE (bottom) ===== -->
+  <text x="200" y="220" text-anchor="middle" font-size="12" font-weight="600" fill="#CC4444">Mismatched Arcs (Bad)</text>
+
+  <!-- Target line -->
+  <line x1="200" y1="232" x2="200" y2="330" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- Ball -->
+  <circle cx="200" cy="305" r="7" fill="#FFF" stroke="#999" stroke-width="1.2"/>
+
+  <!-- Backswing arc - bad (wide arc going back) -->
+  <path d="M 200,298 C 175,280 140,258 110,240"
+        fill="none" stroke="#1B4332" stroke-width="2.5" stroke-linecap="round"
+        marker-end="url(#arrowDark)"/>
+
+  <!-- Forward swing arc - bad (tight/different arc going forward) -->
+  <path d="M 200,298 C 208,288 218,268 222,248"
+        fill="none" stroke="#CC4444" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 3"
+        marker-end="url(#arrowRed)"/>
+
+  <!-- Labels -->
+  <text x="88" y="236" text-anchor="middle" font-size="9" font-weight="600" fill="#1B4332">Wide arc</text>
+  <text x="250" y="248" text-anchor="middle" font-size="9" font-weight="600" fill="#CC4444">Tight arc</text>
+
+  <!-- X mark -->
+  <g transform="translate(200, 334)">
+    <circle cx="0" cy="0" r="10" fill="#CC4444"/>
+    <path d="M -4,-4 L 4,4 M 4,-4 L -4,4" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowDark" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1B4332"/>
+    </marker>
+    <marker id="arrowGoldM" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#C5A55A"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#CC4444"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — PuttrLab</title>
+  <meta name="description" content="Get everything you need to start using PuttrLab — tracking markers, free printable templates, and recommended accessories.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="PuttrLab Logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><img src="PuttrLab Logo.png" alt="PuttrLab" class="header__logo-img"><span>Puttr<span>Lab</span></span></a>
+      <nav class="header__nav">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="metrics.html">Metrics</a>
+        <a href="getting-started.html">Getting Started</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="support.html">Support</a>
+        <a href="#" class="btn btn--primary header__cta">Download on the App Store</a>
+      </nav>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE INTRO -->
+  <section class="hero" style="padding: 4rem 0;">
+    <div class="container">
+      <h1>Shop</h1>
+      <p>Get everything you need to start using PuttrLab.</p>
+    </div>
+  </section>
+
+  <!-- TRUST BANNER -->
+  <section class="section section--alt" style="padding: 2.5rem 0;">
+    <div class="container text-center">
+      <p style="color: var(--text-muted); margin: 0;">Secure checkout powered by <strong>Stripe</strong> — all major credit cards accepted. Free shipping on all marker packs (USPS First Class).</p>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section">
+    <div class="container">
+      <div class="product-grid">
+
+        <!-- Marker Pack -->
+        <div class="product">
+          <div class="product__image">PuttrLab Marker Pack — Product Photo</div>
+          <div class="product__body">
+            <h3>PuttrLab Marker Pack (5-pack)</h3>
+            <div class="product__price">$9.99 <span style="font-size: 0.85rem; font-weight: 400; color: var(--text-muted);">+ free shipping</span></div>
+            <p>Five pre-cut tracking markers printed on rigid white cardstock with double-sided tape pre-applied. Just peel and stick to your putter head.</p>
+            <ul>
+              <li>Pack of 5 markers</li>
+              <li>Rigid cardstock for accurate tracking</li>
+              <li>Double-sided tape pre-applied</li>
+              <li>Works with blade and mallet putters</li>
+              <li>Replacement-friendly — keep extras in your golf bag</li>
+            </ul>
+            <!--
+              STRIPE SETUP:
+              1. Create a free Stripe account at https://dashboard.stripe.com/register
+              2. Go to Payment Links: https://dashboard.stripe.com/payment-links
+              3. Create a new payment link for the Marker Pack ($9.99)
+                 - Add product name, price, and description
+                 - Enable "Collect shipping address"
+                 - Set a confirmation/thank-you message under "After payment"
+              4. Copy the link URL (looks like: https://buy.stripe.com/xxxxxxx)
+              5. Replace the # in the href below with your Stripe payment link URL
+            -->
+            <a href="#" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Buy Now — $9.99</a>
+          </div>
+        </div>
+
+        <!-- Free PDF -->
+        <div class="product">
+          <div class="product__image">DIY Marker Template — Preview</div>
+          <div class="product__body">
+            <h3>DIY Marker Template</h3>
+            <div class="product__price">Free</div>
+            <p>Download and print your own PuttrLab tracking markers. Print on pure white cardstock for best results. Includes instructions for cutting and mounting.</p>
+            <!--
+              Place your marker PDF file in this folder and update the href.
+              Example: href="PuttrLab-Marker-Template.pdf"
+            -->
+            <a href="PuttrLabPrintableTrackers.pdf" class="btn btn--primary" download>Download PDF</a>
+          </div>
+        </div>
+
+        <!-- Coming Soon Tripod -->
+        <div class="product" style="opacity: 0.7;">
+          <div class="product__image">PuttrLab Tripod — Coming Soon</div>
+          <div class="product__body">
+            <h3>PuttrLab Tripod</h3>
+            <div class="product__price">Coming Soon</div>
+            <p>A purpose-built phone tripod designed specifically for PuttrLab — the right height, downward angle, and stability for putting analysis sessions. No guesswork, no adjusting — just set it up and start putting.</p>
+            <span class="btn btn--outline" style="cursor: default; opacity: 0.6;">Coming Soon</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SHIPPING INFO -->
+      <div class="callout" style="margin-top: 3rem;">
+        <strong>Shipping info:</strong> Marker packs ship via USPS First Class Mail within 1–2 business days of your order. Most US orders arrive within 3–5 business days. All orders include free shipping.
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Puttr<span>Lab</span></div>
+          <p class="footer__tagline">Tour-Level Putting Data. Fraction of the Price.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="TikTok">TT</a>
+            <a href="#" aria-label="YouTube">YT</a>
+            <a href="#" aria-label="X / Twitter">X</a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4>Pages</h4>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="metrics.html">Metrics</a>
+          <a href="getting-started.html">Getting Started</a>
+          <a href="shop.html">Shop</a>
+          <a href="support.html">Support</a>
+        </div>
+        <div class="footer__links">
+          <h4>Contact</h4>
+          <a href="mailto:puttrlab@gmail.com">puttrlab@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 PuttrLab. All rights reserved.</span>
+        <div class="footer__legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="licenses.html">Licenses</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
