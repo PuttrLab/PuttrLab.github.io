@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDH5S3JKVT"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-XDH5S3JKVT');
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PuttrLab — Tour-Level Putting Data. Fraction of the Price.</title>
@@ -22,53 +13,72 @@
 </head>
 <body>
 
-  <!-- HEADER (logo only, no nav) -->
+  <!-- HEADER -->
   <header class="header">
-    <div class="header__inner" style="justify-content: center;">
+    <div class="header__inner">
       <a href="index.html" class="header__logo"><img src="PuttrLab Logo.png" alt="PuttrLab" class="header__logo-img"><span>Puttr<span>Lab</span></span></a>
+      <nav class="header__nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="metrics.html">Metrics</a>
+        <a href="getting-started.html">Getting Started</a>
+        <a href="shop.html">Shop</a>
+        <a href="support.html">Support</a>
+        <a href="https://apps.apple.com/us/app/puttrlab/id6760943069" class="header__cta-badge" target="_blank" rel="noopener noreferrer"><img src="Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg" alt="Download on the App Store" style="height: 40px; display: block;"></a>
+      </nav>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero" style="text-align: center; padding: 5rem 0 4rem;">
+  <section class="hero">
     <div class="container">
-      <h1>Tour-Level Putting Data.<br>Fraction of the Price.</h1>
-      <p style="max-width: 640px; margin: 1.25rem auto 2rem; font-size: 1.15rem; color: var(--text-light);">PuttrLab uses your iPhone camera and a simple tracking marker to analyze your putting stroke — face angle, tempo, arc ratio, and acceleration — for under $40 total.</p>
-      <a href="#waitlist" class="btn btn--primary">Join the Waitlist</a>
-    </div>
-  </section>
-
-  <!-- VIDEO DEMO -->
-  <section class="section">
-    <div class="container text-center">
-      <h2>See It in Action</h2>
-      <p style="color: var(--text-muted); max-width: 560px; margin: 0 auto 1.5rem;">Watch a real putting session — stroke data captured in real time, right on your iPhone.</p>
-      <div style="max-width: 560px; margin: 0 auto; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-md);">
-        <!-- Replace src with your demo video -->
-        <video autoplay loop muted playsinline style="width: 100%; display: block;">
-          <source src="PuttrLabHomescreenAnimationLandingPage.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <div class="hero__content">
+        <h1>Tour-Level Putting Data. Fraction of the Price.</h1>
+        <p>PuttrLab uses your iPhone camera and a simple tracking marker to analyze your putting stroke — face angle, tempo, arc ratio, and acceleration — for under $40 total.</p>
+        <div class="hero__buttons">
+          <a href="https://apps.apple.com/us/app/puttrlab/id6760943069" target="_blank" rel="noopener noreferrer" style="display: inline-block;"><img src="Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg" alt="Download on the App Store" style="height: 52px; display: block;"></a>
+          <a href="how-it-works.html" class="btn btn--secondary">See How It Works</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <div class="hero__media-slot">
+          <!-- Replace src with your image file path -->
+          <img src="PuttrLabHomepageImage.jpg">
+        </div>
+        <div class="hero__media-slot">
+          <!-- Replace src with your .mp4 file path -->
+          <video autoplay loop muted playsinline>
+            <source src="PuttrLabHomescreenAnimation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PRICE COMPARISON -->
-  <section class="section section--dark" style="text-align: center; padding: 3.5rem 0;">
+  <!-- THE PROBLEM -->
+  <section class="section">
     <div class="container">
-      <p style="font-size: 1.35rem; color: var(--text-light); max-width: 600px; margin: 0 auto;">Comparable putting analysis systems cost <strong style="color: var(--gold);">$150–$300+</strong>.<br>PuttrLab: <strong style="color: var(--gold);">under $40</strong>.</p>
+      <h2>The Most Important Part of Your Game Is the Least Measured.</h2>
+      <br>
+      <p>Putting accounts for roughly 35–40% of all strokes in a round of golf. PGA Tour pros make only about 40% of their putts from 10 feet. For a 15-handicap amateur, that number drops far below 30%. The difference between a scratch golfer and a 15-handicap from a short range alone can be 10+ percentage points.</p>
+      <p>The path to lower scores isn't a new driver — it's a more consistent putting stroke. But until now, getting real data on your stroke meant spending $150–$300+ on shaft-mounted sensors or dedicated putting systems. Most golfers just guess what's wrong and hope for the best.</p>
+      <p><strong>PuttrLab changes that.</strong></p>
     </div>
   </section>
 
-  <!-- EVERYTHING YOU NEED -->
+  <!-- HOW IT'S DIFFERENT -->
   <section class="section section--alt">
     <div class="container text-center">
-      <h2>Everything You Need</h2>
-      <div class="card-grid" style="max-width: 960px; margin: 2.5rem auto 0;">
+      <h2>Everything You Need for Under $40</h2>
+      <div class="card-grid">
         <div class="card">
           <h3>PuttrLab App</h3>
           <ul>
-            <li>Coming soon to the App Store — $20</li>
+            <li>$20 on the App Store</li>
             <li>Tracks face angle, tempo, arc ratio, and acceleration</li>
             <li>Session-based tracking with customizable putt count</li>
             <li>Works with any putter</li>
@@ -85,54 +95,70 @@
         <div class="card">
           <h3>Tracking Marker</h3>
           <ul>
-            <li>Print your own tracking marker for free</li>
-            <li>Or purchase pre-made trackers from the shop</li>
-            <li>Easily attaches to your putter head</li>
+            <li><a href="PuttrLabPrintableTrackers.pdf" download style="color: var(--gold); text-decoration: underline;">Print your own for free</a> (PDF download)</li>
+            <li>Or purchase pre-made markers from our shop</li>
+            <li>Attaches to your putter head with double-sided tape</li>
           </ul>
         </div>
+      </div>
+      <div class="callout">
+        Comparable putting analysis systems that mount sensors to your putter shaft cost $150–$300+. PuttrLab gives you the same core stroke metrics for a fraction of the cost — using equipment you may already have.
       </div>
     </div>
   </section>
 
-  <!-- COMPELLING STAT -->
-  <section class="section" style="text-align: center;">
+  <!-- SOCIAL PROOF -->
+  <section class="social-proof">
     <div class="container">
-      <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 640px; margin: 0 auto;">Putting accounts for roughly 35–40% of your strokes in a round of golf.<br>Most golfers have <strong style="color: var(--green-dark);">zero data</strong> on their stroke.</p>
+      <p>Join the growing community of golfers using PuttrLab to improve their putting stroke.</p>
     </div>
   </section>
 
-  <!-- COMING SOON + WAITLIST -->
-  <section class="section section--dark" id="waitlist" style="text-align: center;">
+  <!-- BOTTOM CTA -->
+  <section class="cta-section">
     <div class="container">
-      <h2 style="color: var(--white); margin-bottom: 0.75rem;">Coming Soon</h2>
-      <p style="color: var(--text-light); max-width: 520px; margin: 0 auto 0.5rem;">Be the first to know when PuttrLab launches. Sign up for the waitlist and get:</p>
-      <ul style="list-style: none; padding: 0; margin: 0 auto 2rem; max-width: 360px; text-align: left;">
-        <li style="padding: 0.35rem 0 0.35rem 1.25rem; position: relative; color: var(--text-light);"><span style="position: absolute; left: 0; color: var(--gold); font-weight: 700;">&#10003;</span> Early access to the app</li>
-        <li style="padding: 0.35rem 0 0.35rem 1.25rem; position: relative; color: var(--text-light);"><span style="position: absolute; left: 0; color: var(--gold); font-weight: 700;">&#10003;</span> Launch-day pricing</li>
-        <li style="padding: 0.35rem 0 0.35rem 1.25rem; position: relative; color: var(--text-light);"><span style="position: absolute; left: 0; color: var(--gold); font-weight: 700;">&#10003;</span> Setup guide and tips</li>
-      </ul>
+      <h2>Ready to Putt With Purpose?</h2>
+      <p>Download PuttrLab, grab a tripod, print a marker, and start your first session in minutes.</p>
+      <div>
+        <a href="https://apps.apple.com/us/app/puttrlab/id6760943069" target="_blank" rel="noopener noreferrer" style="display: inline-block; vertical-align: middle; margin-right: 0.75rem;"><img src="Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg" alt="Download on the App Store" style="height: 52px; display: block;"></a>
+        <a href="getting-started.html" class="btn btn--outline">Getting Started Guide</a>
+      </div>
+    </div>
+  </section>
 
-      <form action="https://formspree.io/f/xbdpkrje" method="POST" style="max-width: 480px; margin: 0 auto;">
-        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center;">
-          <input type="email" name="email" placeholder="Enter your email" required
-            style="flex: 1; min-width: 240px; padding: 0.85rem 1rem; border: 2px solid rgba(255,255,255,0.2); border-radius: var(--radius); background: rgba(255,255,255,0.1); color: var(--white); font-family: var(--font-body); font-size: 1rem;">
-          <button type="submit" class="btn btn--primary">Join Waitlist</button>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Puttr<span>Lab</span></div>
+          <p class="footer__tagline">Tour-Level Putting Data. Fraction of the Price.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="TikTok">TT</a>
+            <a href="#" aria-label="YouTube">YT</a>
+            <a href="#" aria-label="X / Twitter">X</a>
+          </div>
         </div>
-        <input type="hidden" name="_subject" value="New PuttrLab Waitlist Signup">
-      </form>
-
-      <p style="color: rgba(255,255,255,0.4); font-size: 0.8rem; margin-top: 1rem;">No spam. Unsubscribe anytime. Email collected via <a href="https://formspree.io" target="_blank" rel="noopener noreferrer" style="color: rgba(255,255,255,0.4); text-decoration: underline;">Formspree</a>.</p>
-    </div>
-  </section>
-
-  <!-- MINIMAL FOOTER -->
-  <footer class="footer" style="padding: 1.5rem 0;">
-    <div class="container">
-      <div class="footer__bottom" style="border-top: none; padding-top: 0;">
+        <div class="footer__links">
+          <h4>Pages</h4>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="metrics.html">Metrics</a>
+          <a href="getting-started.html">Getting Started</a>
+          <a href="shop.html">Shop</a>
+          <a href="support.html">Support</a>
+        </div>
+        <div class="footer__links">
+          <h4>Contact</h4>
+          <a href="mailto:puttrlab@gmail.com">puttrlab@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
         <span>&copy; 2026 PuttrLab. All rights reserved.</span>
         <div class="footer__legal">
           <a href="privacy.html">Privacy Policy</a>
           <a href="terms.html">Terms of Service</a>
+          <a href="licenses.html">Licenses</a>
         </div>
       </div>
     </div>
